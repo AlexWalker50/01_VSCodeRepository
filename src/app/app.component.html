@@ -1,3 +1,24 @@
 <h1>
   {{title}}
+  <!-- {{title.test.test}} -->
 </h1>
+<p>
+  Length: {{title.length}}
+</p>
+<p>
+  Reversed(title reversed, page 101): {{getReversed(title)}}
+</p>
+
+<p>
+  starUrl = 'https://developer.mozilla.org/samples/cssref/images/
+starsolid.gif'; <b>img [src]="starUrl"</b> <b>NOT img src="starUrl"</b>
+</p>
+
+<p>
+  <!-- <b>getAGE:</b> {{getAGE()}} <b>,  PersonREGULARFunction(2)</b>{{ PersonREGULARFunction(2)}} -->
+  <b> PersonREGULARFunction(2):</b>  {{ PersonREGULARFunction(2)}},
+  <br/><b>getAGE:</b> &nbsp;&nbsp;&nbsp;&nbsp;{{getAGE()}},
+  <br/><b>getAGEARROW:</b>{{getAGEARROW()}}
+</p>
+
+<img [src]="starUrl">
